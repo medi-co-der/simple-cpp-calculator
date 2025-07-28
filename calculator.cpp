@@ -4,15 +4,15 @@ using namespace std;
 /* TODO: make a basic arthmetic calculator(done)*/
 // make it persistant and take more inputs from the user
 
-double num1{}, num2{}; // initialize variables to store the input value
-char operation{};      // char is used to store arthmetic operations */+-
-
-void GetUserInput()    // this function gets an input/expression from user
+// double num1{}, num2{}; // initialize variables to store the input value
+// char operation{};      // char is used to store arthmetic operations */+-
+// DON'T USE GLOBAL VARIABLES
+void GetUserInput(double& num1, char& operation, double& num2)    // this function gets an input/expression from user
 {
     cout << "enter an expression: ";
     cin >> num1 >> operation >> num2;  // input stored in given variable in given order
 }
-double arthmetic()    // this functon takes values returned from GetUserInput function and performs basic operations accordingly
+double arthmetic(double num1, char operation, double num2)    // this functon takes values returned from GetUserInput function and performs basic operations accordingly
 {
     switch (operation)
     {
@@ -45,7 +45,7 @@ double arthmetic()    // this functon takes values returned from GetUserInput fu
 }
 int main()
 {
-    GetUserInput(); // calls the function for user input
-    cout << arthmetic();    // prints out values returned by arithmetic function
+    GetUserInput(num1, operation, num2); // calls the function for user input
+    cout << arthmetic(num1, operation, num2);    // prints out values returned by arithmetic function
     return 0;
 }
