@@ -45,6 +45,8 @@ double arthmetic(double num1, char operation, double num2)    // this functon ta
 }
 int main()
 {
+    double num1{}, double num2{};
+    char operation{};
     GetUserInput(num1, operation, num2); // calls the function for user input
     cout << arthmetic(num1, operation, num2);    // prints out values returned by arithmetic function
     return 0;
