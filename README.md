@@ -1,1 +1,3 @@
 # simple-cpp-calculator
+-----------------------
+this is my first attempt at understanding how cpp works so I made this simple calculator from what I learned...
