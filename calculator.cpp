@@ -9,10 +9,10 @@ using namespace std;
 // DON'T USE GLOBAL VARIABLES
 void GetUserInput(double& num1, char& operation, double& num2)    // this function gets an input/expression from user
 {
-    cout << "enter an expression: ";
+    cout << "enter an expression: \n";
     cin >> num1 >> operation >> num2;  // input stored in given variable in given order
 }
-double arthmetic(double num1, char operation, double num2)    // this functon takes values returned from GetUserInput function and performs basic operations accordingly
+double arithmetic(double num1, char operation, double num2)    // this functon takes values returned from GetUserInput function and performs basic operations accordingly
 {
     switch (operation)
     {
@@ -45,9 +45,11 @@ double arthmetic(double num1, char operation, double num2)    // this functon ta
 }
 int main()
 {
+    while(true){
     double num1{}, double num2{};
     char operation{};
     GetUserInput(num1, operation, num2); // calls the function for user input
-    cout << arthmetic(num1, operation, num2);    // prints out values returned by arithmetic function
+    cout << arithmetic(num1, operation, num2);    // prints out values returned by arithmetic function
+    }
     return 0;
 }
