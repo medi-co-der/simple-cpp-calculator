@@ -2,11 +2,7 @@
 using namespace std;
 
 /* TODO: make a basic arthmetic calculator(done)*/
-// make it persistant and take more inputs from the user
 
-// double num1{}, num2{}; // initialize variables to store the input value
-// char operation{};      // char is used to store arthmetic operations */+-
-// DON'T USE GLOBAL VARIABLES
 void GetUserInput(double& num1, char& operation, double& num2)    // this function gets an input/expression from user
 {
     cout << "enter an expression: \n";
